@@ -1,0 +1,21 @@
+# Flutter
+**/build/
+.dart_tool/
+.packages
+pubspec.lock
+
+# iOS/Android
+**/ios/Pods/
+**/ios/.symlinks/
+**/android/.gradle/
+
+# Firebase
+firebase/functions/node_modules/
+firebase/functions/lib/
+
+# Python
+__pycache__/
+*.pyc
+
+# Figma cache
+*.tmp

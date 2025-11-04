@@ -1,0 +1,22 @@
+{
+  "name": "minicheff-functions",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "deploy": "firebase deploy --only functions"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^11.11.1",
+    "firebase-functions": "^4.5.0",
+    "openai": "^4.28.0",
+    "@google-cloud/firestore": "^7.7.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "eslint": "^8.57.0",
+    "@typescript-eslint/eslint-plugin": "^7.9.0",
+    "@typescript-eslint/parser": "^7.9.0"
+  }
+}
