@@ -1,0 +1,27 @@
+# Dataset YOLOv8 para pratos brasileiros.
+path: ../data/datasets/food_br
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: arroz
+  1: feijao
+  2: frango
+  3: carne_bovina
+  4: peixe
+  5: ovo
+  6: batata
+  7: mandioca
+  8: farofa
+  9: salada_verde
+  10: tomate
+  11: cenoura
+  12: brocolis
+  13: couve
+  14: fruta
+  15: suco
+  16: leite
+  17: massa
+  18: leguminosa
+  19: sobremesa

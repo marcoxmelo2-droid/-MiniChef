@@ -1,0 +1,35 @@
+{
+  "minicheff_prototype": {
+    "description": "Blueprint textual do protótipo navegável. Importe no Figma via plugin JSON to Figma ou recrie manualmente.",
+    "screens": [
+      {"name": "Splash", "components": ["Logo MiniCheff", "Claim"]},
+      {"name": "Onboarding 1", "components": ["Titulo Vamos conhecer seu pequeno?", "Form Nome", "Select Faixa etária"]},
+      {"name": "Onboarding 2", "components": ["Titulo Restrições", "Chips Alergias", "Campos Preferidos/Recusados"]},
+      {"name": "Onboarding 3", "components": ["Objetivos", "Toggle Modo Infantil"]},
+      {"name": "Home", "components": ["AppBar Avatar", "CTA Escanear", "Card Cardápio", "Progress Bars", "Card Dica"]},
+      {"name": "Scanner", "components": ["Preview Camera", "Bounding Boxes", "CTA Confirmar"]},
+      {"name": "Resultado", "components": ["Lista alimentos", "Resumo macros", "Alertas", "CTA Adicionar/Prato ideal"]},
+      {"name": "Cardápio", "components": ["Listas refeição", "Botão Trocar", "Substituições regionais"]},
+      {"name": "Chat", "components": ["Baloes Luma", "Quick Replies", "Input"]},
+      {"name": "Diário", "components": ["Metas semanais", "Timeline", "CTA Relatório"]},
+      {"name": "Perfil", "components": ["Dados criança", "Preferências", "Modo infantil"]},
+      {"name": "Configurações", "components": ["Privacidade", "Processar on-device", "Notificações"]},
+      {"name": "Paywall", "components": ["Comparação Free vs Premium", "CTA Assinar"]},
+      {"name": "Modo Infantil", "components": ["Mascote animado", "Missões"]}
+    ],
+    "navigation": [
+      {"from": "Splash", "to": "Onboarding 1"},
+      {"from": "Onboarding 3", "to": "Home"},
+      {"from": "Home", "to": "Scanner"},
+      {"from": "Scanner", "to": "Resultado"},
+      {"from": "Resultado", "to": "Diário"},
+      {"from": "Home", "to": "Cardápio"},
+      {"from": "Home", "to": "Chat"},
+      {"from": "Home", "to": "Diário"},
+      {"from": "Home", "to": "Perfil"},
+      {"from": "Perfil", "to": "Configurações"},
+      {"from": "Home", "to": "Paywall"},
+      {"from": "Home", "to": "Modo Infantil"}
+    ]
+  }
+}
